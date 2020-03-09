@@ -1,3 +1,11 @@
+/*
+ * @brief   单链表，支持添加、删除、清空节点
+ * @author  xxmcf
+ * @version 1.0
+ * @date    2020/03/09
+ *
+ *
+ */
 #include "linklist.h"
 #include <iostream>
 #include <stack>

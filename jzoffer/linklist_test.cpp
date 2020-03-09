@@ -172,6 +172,19 @@ static void Test12()
     test((char*)__FUNCTION__, lst, "1,2,3,4,2");
 }
 
+//按值删除多个结点
+static void Test13()
+{
+    LinkList lst;
+    lst.insertNode(0, 1);
+    lst.insertNode(1, 2);
+    lst.insertNode(2, 3);
+    lst.insertNode(3, 4);
+    lst.insertNode(4, 2);
+    lst.removeValue(2);
+    test((char*)__FUNCTION__, lst, "1,3,4");
+}
+
 void link_list_test()
 {
     log("\n<<<<<<<<<<<<<<<< 链表测试用例 >>>>>>>>>>>>>>>>>\n");
@@ -187,4 +200,5 @@ void link_list_test()
     Test10();
     Test11();
     Test12();
+    Test13();
 }
